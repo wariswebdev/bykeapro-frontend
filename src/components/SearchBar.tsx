@@ -46,7 +46,7 @@ const SearchBar = ({ language, onSelect }: SearchBarProps) => {
 
     const fetchSuggestions = async () => {
       try {
-        const base = "https://bykeapro-backend-git-master-awarisghaziwork-7951s-projects.vercel.app/";
+        const base = "https://bykeapro-backend.vercel.app/";
         const url = `${base}api/search?q=${encodeURIComponent(debouncedQuery)}`;
         const res = await fetch(url, {
           headers: {
